@@ -1,0 +1,71 @@
+html, body {
+    color: #343A40;
+    font-family: 'Roboto Slab', serif;
+    height: 100%;
+    margin: 0;
+}
+
+.code {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.bg-green {
+  background: linear-gradient(152.81deg, #3D957E 0%, #2A6965 100%);
+}
+
+.bg-light-green {
+    background-color: #EAF1F1;
+}
+
+.dark-green {
+    color: #3D957E;
+}
+
+.btn-green {
+    background: linear-gradient(95.41deg, #5BB081 0%, #3D957E 100%);
+    box-shadow: 0px 16px 32px -8px rgba(49, 120, 115, 0.6);
+}
+
+.light-shadow {
+    box-shadow: 0px 6px 12px -6px rgba(152, 187, 185, 0.5);
+}
+
+.parallelogram {
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 25% 100%); 
+    clip-path: polygon(50% 0, 100% 0%, 100% 100%, 25% 100%);
+}
+
+.link {
+    color: #fff !important;
+    text-decoration-color: #fff !important;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.opacity-08 {
+  opacity: 0.8;
+}
+
+.opacity-05 {
+  opacity: 0.5;
+}
+
+.with-blur {
+    background-color: rgba(240, 248, 255, 0.75) !important;
+}
+  
+/* if backdrop support: very transparent and blurred */
+@supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
+    .with-blur {
+        background-color: rgba(240, 248, 255, 0.15) !important;
+        -webkit-backdrop-filter: blur(50px);
+        backdrop-filter: blur(50px);
+    }
+}
