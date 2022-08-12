@@ -45,6 +45,10 @@ html, body {
     text-decoration-color: #fff !important;
 }
 
+.top-0 {
+    top: 0;
+}
+
 .text-white {
   color: #fff;
 }
